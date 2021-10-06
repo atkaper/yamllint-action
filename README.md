@@ -21,7 +21,7 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v2
       - name: Lint YAML
-        uses: koozz/yamllint-action@latest
+        uses: atkaper/yamllint-action@latest
 ```
 
 If your satisfied, follow best practices and pin the action to a specific
