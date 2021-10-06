@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run yamllint
-        uses: atkaper/yamllint-action@2.0.0
+        uses: atkaper/yamllint-action@2.1.0
 
       - name: Write yamllint output as pull request comment
         uses: actions/github-script@v5
