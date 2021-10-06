@@ -21,11 +21,8 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v2
       - name: Lint YAML
-        uses: atkaper/yamllint-action@latest
+        uses: atkaper/yamllint-action@1.3.0
 ```
-
-If your satisfied, follow best practices and pin the action to a specific
-version.
 
 This version will put the yamllint output also in an environment variable called YAML_LINT_OUT for further use in next action steps.
 You can use it in a next step using: ${{ env.YAML_LINT_OUT }}
