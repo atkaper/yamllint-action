@@ -4,11 +4,26 @@ extends: default
 yaml-files:
   - '*.yaml'
   - '*.yml'
-  - '.yamllint'
+
+ignore: |
+  .git
+  .github
+  .yamllint
 
 rules:
+  new-lines:
+    type: unix
   line-length:
-    max: 120
+    max: 200
     level: warning
+  new-line-at-end-of-file:
+    level: error
+  trailing-spaces:
+    level: error
+  document-start: disable
+  comments-indentation:
+    level: error
+  comments:
+    level: error
   truthy:
     check-keys: false
