@@ -1,5 +1,5 @@
 ---
-name: "GitHub yamllint check"
+name: "GitHub yamllint check env return"
 description: "Run yamllint with GitHub formatted output and environment variable output in YAML_LINT_OUT."
 author: "Thijs Kaper"
 branding:
