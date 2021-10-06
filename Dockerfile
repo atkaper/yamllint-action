@@ -6,7 +6,7 @@ RUN pip install yamllint
 USER 1000
 WORKDIR /src
 
-ADD entrypoint.sh /src/entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["/src/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 

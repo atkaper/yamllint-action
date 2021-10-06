@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # The first run will add github source code annotations
 yamllint . -f github
