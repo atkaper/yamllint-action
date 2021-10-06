@@ -1,0 +1,11 @@
+
+test:
+  hello: test
+
+ # wrong comment
+test2:
+  hi: value
+
+test:
+  duplicate: yes
+

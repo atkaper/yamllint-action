@@ -7,7 +7,7 @@ RETVAL=$?
 # The second run (only executed when first has failures) will send simple output back for use in further notifications
 if [ "${RETVAL}" != "0" ]
 then
-  YAML_LINT_OUT=$(yamllint .)
+  YAML_LINT_OUT=$(yamllint . -f standard)
 else
   YAML_LINT_OUT=""
 fi
