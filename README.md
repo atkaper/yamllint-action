@@ -27,6 +27,14 @@ jobs:
 If your satisfied, follow best practices and pin the action to a specific
 version.
 
+This version will put the yamllint output also in an environment variable called YAML_LINT_OUT for further use in next action steps.
+You can use it in a next step using: ${{ env.YAML_LINT_OUT }}
+
+
+## Forked from
+
+https://github.com/koozz/yamllint-action
+
 ## License
 
 MIT
