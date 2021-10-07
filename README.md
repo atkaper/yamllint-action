@@ -55,6 +55,13 @@ This version will put the yamllint output also in an environment variable called
 You can use it in a next step using: ${{ env.YAML_LINT_OUT }}
 In above example it writes the status as PR conversation comment.
 
+## Example Screenshots
+
+![PR Comment](screenshots/example-pr-comment.png "PR Comment")
+
+![Code Annotation](screenshots/example-code-annotation.png "Code Annotation")
+
+
 ## Forked from
 
 https://github.com/koozz/yamllint-action
