@@ -30,7 +30,7 @@ jobs:
 
       - name: Write yamllint output as pull request comment
         uses: actions/github-script@v5
-        if: ${{ always() }}
+        if: ${{ success() || failure() }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
