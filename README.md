@@ -19,7 +19,7 @@ name: Verify - Yaml Lint
 # environment variable.
 #
 # We use this environment variable to write as PR comment, so that the user will clearly see that
-# there is an issue to solve, and what the issue is. It also show a link to the files section
+# there is an issue to solve, and what the issue is. It also shows a link to the files section
 # of the PR.
 #
 # As it makes no sense to keep multiple validation reports in the comment section, I have added
@@ -29,7 +29,7 @@ name: Verify - Yaml Lint
 # There are multiple ways of writing comments. In this one I used a plain "curl" statement to talk
 # to the GitHub API, but there are also other modules you can use (like tactions/github-script).
 #
-# Note: the pull-request comment will ONLY be shown when the validation is tirggered by a PR change.
+# Note: the pull-request comment will ONLY be shown when the validation is triggered by a PR change.
 # For a manual run, the script does not know where to comment, so in that case the results are
 # only shown in the action run log.
 
