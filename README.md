@@ -70,7 +70,7 @@ jobs:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ (success() || failure()) && (github.event.pull_request.number) }}
         run: |
-          # Check first 100 comments for, find ones which start with "#### Yaml", and get their url's.
+          # Check first 100 comments, find ones which start with "#### Yaml", and get their url's.
           # Note/Warning: simplification/limitation - we do not look past the first 100 comments. So for larger amounts this needs a paging fix.
           curl -s -H "Accept: application/vnd.github.v3+json" "${URL}?per_page=100&page=1" -H "Authorization: token $TOKEN" >comments.json
           DELETE_URLS="$( jq -r ".[] | select(.body | startswith(\"#### Yaml\")) | .url" comments.json )"
