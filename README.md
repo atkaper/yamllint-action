@@ -62,7 +62,7 @@ jobs:
           
       # See also https://github.com/atkaper/yamllint-action for the tweaked yamllint module.
       - name: Run yamllint
-        uses: atkaper/yamllint-action@2.2.0
+        uses: atkaper/yamllint-action@2.3.0
 
       - name: Delete old yamllint pull request comment(s)
         env:
