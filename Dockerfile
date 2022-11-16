@@ -1,4 +1,4 @@
-FROM python:3.11.0b5-alpine
+FROM python:3.12.0a2-alpine
 
 RUN apk add --update --no-cache ca-certificates git
 RUN pip install yamllint
